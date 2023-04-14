@@ -26,7 +26,13 @@ public class MyAdvListTest {
         myAdvList1.add("7");
         System.out.println("Clone and add '7': ");
         for (int i = 0; i < myAdvList1.size(); i++) {
+            if (i==2){
+                myAdvList1.set(i, "10");
+            }
             System.out.println(myAdvList1.get(i));
+        }
+        for (int i = 0; i < myAdvList.size(); i++) {
+            System.out.println(myAdvList.get(i));
         }
         System.out.print("index of '2': ");
         System.out.println(myAdvList1.indexOf("2"));
