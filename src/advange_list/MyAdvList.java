@@ -61,6 +61,9 @@ public class MyAdvList<E>{
         }
         return (E) elements[i];
     }
+    public void set(int index, E element){
+        elements[index] = element;
+    }
     public int size(){
         return size;
     }
